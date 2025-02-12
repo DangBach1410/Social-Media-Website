@@ -1,0 +1,1340 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    white-space: nowrap;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5em;
+    flex: 1;
+    text-align: center;
+}
+
+h3 {
+    margin: 20px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.grid-item {
+    padding: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    flex: 1;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    flex: 0 0 auto;
+}
+
+#searchForm {
+    display: flex;
+    width: 100%;
+}
+
+#searchQuery {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+    width: 500px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    background-color: #555;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#tab-line, #dropdown-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.tab, .login-tab{
+    margin: 0;
+    white-space: nowrap;
+}   
+
+.login-tab a, .tab a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-tab a i, .tab a i {
+    margin-right: 5px;
+}
+
+.login-tab a:hover, .tab a:hover {
+    border-radius: 10px;
+    background-color: #555;
+}
+
+main {
+    padding-top: 80px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    min-height: 610px;
+}
+
+#addmoduleForm, #editmoduleForm, #deletemoduleForm, #contactForm, #loginForm, #registerForm, #editProfileForm, #deleteaccountForm{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+#deleteaccountForm{
+    width: 380px;
+}
+
+.change-password-form{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+#addmoduleForm h2, #editmoduleForm h2, #deletemoduleForm h2, #editCommentForm h2, #contactForm h2, #editPostForm h2, #deleteaccountForm h2, #editProfileForm h2, #loginForm h2, #registerForm h2, .change-password-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 43px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+label {
+    float: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#password {
+    padding-right: 40px;
+}
+
+#loginForm button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#addmoduleForm button, #editmoduleForm button, #deletemoduleForm button, #contactForm button, #deleteaccountForm button, #registerForm button, #editProfileForm button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contactForm button:hover, #addmoduleForm button:hover, #editmoduleForm button:hover, #deletemoduleForm button:hover {
+    background-color: #555;
+}
+
+.change-password-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submitBtn[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+#loginForm a:hover {
+    text-decoration: underline;
+}
+
+#message {
+    color: tomato
+}
+
+.user-icon {
+    position: relative;
+    font-size: 36px;
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 1;
+    margin-left: 10px ;
+}
+
+.user-icon i {
+    color: #fff;
+}
+
+.user-options {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    min-width: 200px; 
+    border-radius: 5px;
+    margin-top: 10px;
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.5s ease-in-out 0.5s, opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+}
+
+.user-options.show {
+    transform: translateY(0);
+    transition: transform  0.3s ease-in-out 0.3s, opacity 0.3s ease-in-out 0.3s, visibility 0s linear 0.3s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.user-options ul {
+    list-style-type: none;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.user-options li.username {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: default;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-options li.username i {
+    margin-right: 5px;
+}
+
+.user-options li.logout a, .user-options li.profile a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.user-options li.logout a i, .user-options li.profile a i {
+    margin-right: 5px;
+}
+
+.user-options li.logout:hover, .user-options li.profile:hover {
+    border-radius: 10px;
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-side {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.module {
+    margin-right: 10px;
+}
+
+.options {
+    position: relative;
+    cursor: pointer;
+}
+
+.options .fa-ellipsis-h {
+    font-size: 1.5em;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.postForm, #postForm, #editPostForm, #editCommentForm{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0px auto 20px auto;
+}
+
+#postForm .user-picture:hover, #editPostForm .user-picture:hover, #editCommentForm .user-picture:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+.postForm a{
+    color:#333;
+    transition: color 0.3s ease-in-out;
+}
+
+.postForm a:hover{
+    text-decoration: underline;
+}
+
+#content {
+    resize: none; 
+    overflow-y: hidden; 
+    min-height: 100px;
+    width: 100%; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#contactForm #content{
+    overflow-y: auto;
+}
+
+.file-label {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.file-label i {
+    margin-right: 5px;
+}
+
+.file-input {
+    display: none;
+}
+
+.image-preview {
+    margin-top: 10px;
+}
+
+.image-preview img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.post-button:hover {
+    background-color: #555;
+}
+
+#imagePreview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-preview img {
+    width: 85px;
+    height: 85px; 
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-container img:hover {
+    cursor: zoom-in;
+}
+
+.image-container:hover{
+    cursor: pointer;
+}
+
+.remove-button{
+    padding: 0 !important;
+    float: right;
+    color: white;
+    border: none;
+    background-color: #777; 
+    cursor: pointer;
+    padding: 0px; 
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50% !important; 
+}
+
+.removebutton{
+    padding: 0 !important;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    border: none;
+    background-color: #777; 
+    cursor: pointer;
+    padding: 0px; 
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50% !important; 
+}
+
+.removebutton:hover, .remove-button:hover{
+    opacity: 1;
+}
+
+.post {
+    max-width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    display: flex;
+}
+
+.user-picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-picture:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.module {
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+    float: right;
+}
+
+.post-time {
+    color: #777;
+    font-size: 0.9em;
+}
+.post-content {
+    flex: 1;
+    display: block;
+    overflow: auto; 
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+.content-contain {
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#content-contain {
+    max-height: 400px;
+    overflow-y: auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.post-images {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail {
+    max-width: 490px;
+    max-height: 490px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    height: 245px;
+    display: flex; 
+    margin: 0 auto; 
+    width: 245px;
+}
+
+.expand-images {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.post-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.post-image img{
+    transition: transform 0.3s ease; 
+    transform-origin: center center;
+}
+
+.post-image:hover img{
+    transform: scale(1.1);
+}
+
+.post-image:nth-child(2) .view-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+.post-image:nth-child(2):hover .view-more {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.view-more {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.view-more span {
+    font-size: 16px;
+}
+
+.contact-container {
+    justify-content: center;
+    padding: 20px;
+}
+
+#contactInfo {
+    margin-bottom: 20px;
+}
+
+#contactInfo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#contactInfo p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#emailLink {
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#emailLink:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    width: 125%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+  
+.profile-info {
+    display: flex;
+    flex-basis: 60%;
+    margin-right: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.profile-info h2 {
+    margin-top: 0;
+}
+  
+.profile-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.profile-info li {
+    margin-bottom: 10px;
+}
+  
+.profile-actions {
+    border: 2px solid#777;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-basis: 30%;
+    text-align: right;
+}
+  
+.profile-actions a {
+    width: 150px;
+    display: block;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-right: 30vw;
+}
+  
+.profile-actions a:hover {
+    border-radius: 10px;
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    position: fixed;
+    margin-left: 20px;
+    width: 30%; 
+    border-right: 2px solid#777; 
+    height: 100%;
+}
+
+.filter label {
+    float: none;
+    display: block;
+    padding: 10px;
+    margin-bottom: 0px;
+    background-color: #333;
+    color: #fff;
+    width: 60%;
+}
+
+.results {
+    width: 65%;
+    margin-left: 40vw;
+}
+.found-name{
+    display: flex;
+}
+
+.results .found-name{
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%; 
+    margin: 10px;
+}
+
+.results .found-name a{
+    color: #000;
+}
+
+.results .postForm .comment-section a:hover{
+    color: #ffffff;
+}
+
+.results a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+input[type='radio'] {
+    opacity: 0;
+    position: absolute;
+}
+
+.filter label:hover {
+    border-radius: 10px;
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.context-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.context-menu a:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.comment-section {
+    border-top: 1px solid #ccc; ;
+    text-align: center;
+    margin-top: 20px;
+}
+ 
+.comment-section p{
+    float: left;
+}
+
+.comment-section a {
+    width: 90%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.comment-section a:hover {
+    text-decoration: none;
+    background-color: #666;
+    transform: scale(1.05);
+}
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.comment .user-picture {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment .comment-content {
+    margin-left: 10px;
+    flex: 1;
+}
+
+.comment .username {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+.comment .content {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.comment-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.comment-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form textarea {
+    width: calc(100% - 20px);
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.comment-form button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #666;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.comment .user-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.comment .content-container {
+    flex: 1;
+    position: relative;
+}
+
+.comment .username {
+    font-weight: bold;
+}
+
+.comment .content {
+    margin-top: 5px;
+}
+
+.comment .options {
+    position: absolute;
+    right: 0;
+    top: 0; 
+}
+
+.comment .options i {
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+}
+
+.comment .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.comment .dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.comment .dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+.comment-images {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.comment-image .thumbnail {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    height: 245px;
+    display: flex; 
+    margin: 0 auto; 
+    width: 245px;
+}
+#dropdown-menu {
+    display: none;
+}
+#menu-icon{
+    display: none;
+}
+#menu-icon:hover {
+    border-radius: 5px;
+    background-color: #666;
+}
+@media (max-width: 1500px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+    header{
+        font-size: 1em;
+    }
+    main {
+        width: 100%;
+        min-height: 600px;
+    }
+    .grid-item {
+        padding: 10px 0;
+        width: 100%;
+    }
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+    }
+    .search-container{
+        width: auto;
+        flex: 1;
+        margin-right: 0px;
+        float: right;
+    }
+    #searchForm {
+        display: flex;
+        width: 30%;
+    }
+    #searchQuery {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        font-size: 1em;
+        width: 370px;
+    }
+    .filter{
+        margin-left: 5px;
+    }
+    .results {
+        width: 65%;
+        margin-left: 35vw;
+    }
+    .results h2{
+        font-size: 1em;
+    }
+    .results .postForm{
+        width: 80%;
+    }
+    .comment .username{
+        font-size: 0.7em;
+    }
+    .comment .content{
+        font-size: 0.7em;
+    }
+    .comment .user-picture{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+    }
+    .tab {
+        display: none;
+    }
+    .dropdown-tab{
+        float: left;
+        margin: 0;
+    }   
+    .dropdown-tab a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .dropdown-tab a i {
+        margin-right: 5px;
+    }
+    
+    .dropdown-tab a:hover {
+        border-radius: 10px;
+        background-color: #555;
+    }
+    #dropdown-menu.show {
+        display: flex;
+    }
+    #dropdown-menu li {
+        padding: 10px;
+        text-align: center;
+    }
+    #dropdown-menu li a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+    #dropdown-menu {
+        list-style: none;
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 0px;
+        background-color: #333;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        min-width: 200px; 
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    #dropdown-menu.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        font-size: 1.8vw;
+    }
+    .search-container{
+        width: auto;
+        flex: 1;
+    }
+    #searchForm {
+        display: flex;
+        width: 100%;
+    }
+    #searchQuery {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        font-size: 1em;
+        min-width: 60px;
+    }
+    #searchQuery {
+        flex: 2;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        font-size: 1em;
+        width: 150px;
+    }
+    .comment-section a{
+        width: 85%;
+    }
+    body {
+        font-size: 14px;
+    }
+    form {
+        font-size: 0.7em;
+    }
+    .postForm{
+        width: 90%;
+    }
+    .post-header img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+    .post-header span{
+        font-size: 0.7em;
+    }
+    .content-contain{
+        font-size: 0.7em;
+    }
+    .module {
+        font-size: 1em;
+    }   
+    .post-images {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+    }
+    #userOptions ul li i, #userOptions ul li span{
+        font-size: 0.7em;
+    }
+    .user-options {
+        min-width: 150px;
+    } 
+    .profile-container, #editPostForm, #editCommentForm, #postForm, #loginForm, #registerForm, #contactForm, #editProfileForm, #deleteaccountForm, .change-password-form {
+        width: 90%;
+    }
+    .comment-section {
+        font-size: 0.7em;
+    }
+    .comment-section a{
+        font-size: 1em;
+    }
+    #editPostForm span{
+        font-size: 0.7em;
+    }
+}
+
