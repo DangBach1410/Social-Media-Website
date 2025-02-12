@@ -32,8 +32,8 @@ Course Help Hub is a web-based platform designed to facilitate interaction among
 ### Prerequisites
 - PHP (version 7.4 or higher)
 - MySQL
-- A local server like XAMPP, WAMP, or MAMP
-
+- A local server like XAMPP
+  
 ### Steps
 1. Clone the repository to your local machine:
    ```bash
