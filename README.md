@@ -7,7 +7,6 @@ Course Help Hub is a web-based platform designed to facilitate interaction among
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Testing](#testing)
 - [Contributing](#contributing)
 
 ## Features
@@ -67,18 +66,6 @@ Course Help Hub is a web-based platform designed to facilitate interaction among
    - Administrators can manage the modules (add, edit, delete).
    - Admins have access to a dedicated "Manage Modules" page, where they can perform these actions.
 
-## Testing
-
-The platform has been thoroughly tested with over 50 test cases to ensure its functionality. Key features like login, registration, content management, and search have been validated to ensure smooth operation.
-
-- **Key Testing Areas**:
-  - **Login/Sign Up**: Ensures that user authentication functions properly for both regular users and administrators.
-  - **Post Questions**: Confirms that users can post, edit, and delete questions successfully.
-  - **Comment System**: Verifies that users can comment on posts and manage their comments.
-  - **Search**: Ensures that the search bar returns accurate results for questions, users, and modules.
-  
-For details on the test cases and outcomes, please refer to the `test_log.txt` file in the repository.
-
 ## Contributing
 
 I welcome contributions to the Course Help Hub project! If you’d like to improve the platform or add new features, please follow these steps:
@@ -108,5 +95,3 @@ I welcome contributions to the Course Help Hub project! If you’d like to impro
 5. **Create a pull request**:
    - Go to the "Pull Requests" section of the original repository and click on "New Pull Request".
    - Select your branch and submit the pull request to merge your changes into the main repository.
-
-Please ensure your code adheres to the existing style and passes all test cases. I appreciate your contributions and look forward to seeing how you can improve the platform!
