@@ -37,7 +37,7 @@ Course Help Hub is a web-based platform designed to facilitate interaction among
 ### Steps
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/course-help-hub.git
+   git clone https://github.com/DangBach1410/social-media-website.git
    ```
 2. Set up a local server (e.g., XAMPP).
 3. Import the database schema provided in the database.sql file into your MySQL database.
